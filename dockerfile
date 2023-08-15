@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 # Build the Next.js application
-RUN npm run build
+RUN npm i --force && npm run build
 
 # Specify the command to run the Next.js server
 CMD ["npm", "run", "start"]
